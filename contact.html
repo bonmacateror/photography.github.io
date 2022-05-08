@@ -1,0 +1,108 @@
+<!DOCTYPE html>                                                                                                            
+<html>
+<head>
+     <title>webpge</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+     <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body class="bgcolor"> 
+     <section class="video-wrapper">
+         <!...<video playsinline autoplay muted loop poster="">
+             <source src="background_video.mp4" type="video/mp4">
+        </video>...>
+          
+       <div class="header">
+         <nav>
+             <img src="logo.png"/>
+             <div class="nav-links" id="nav-links">
+                 <a class="prevy" onclick="hidemenu()" >&#215;</a>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li> 
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contct Us</a></li>
+                 </ul>
+              </div>
+             <i class="fa fa-bars" onclick="showmenu()"></i> 
+         </nav>
+         
+         </div>
+         <div class="text-box">
+            <h1>Contact Us Today</h1> 
+         </div>
+         
+     </section>
+     <section class="contact">
+         <p>For any queries or concerns please feel free to contact Us.
+            </p>
+           <div class="row">
+               <div class="contact-col">
+                  <div>
+                       <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <span><h6>Location</h6></span>
+                      
+                  </div>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.98895662726!2d36.682683606082996!3d-1.286781763083784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a24fb973c9b%3A0xfd6526a3a1bd5fb0!2sDagoretti!5e0!3m2!1sen!2ske!4v1648984135169!5m2!1sen!2ske" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <div>
+                      <i class="fa fa-home"></i>
+                      <span>
+                           <h6>Nairobi, naivas Supermarket</h6>
+                      </span>
+                 
+                  </div>
+                  <div>
+                      <i class="fa fa-phone"></i>
+                      <span>
+                           <h6>+254 703551387</h6>
+                           <p>Call us</p>
+                      </span>
+                   
+                  </div>
+                  <div>
+                      <i class="fa fa-envelope-o"></i>
+                      <span>
+                           <h6>photographyworld@gmail.com</h6>
+                           <p>Email us your query</p>
+                      </span>
+                  </div>
+               </div>
+               <div class="contact-col">
+                  <form action="form_handler_page.php">
+                       <input type="text" name="name" placeholder="Enter your name" required/>
+                       <input type="email" name="email" placeholder="Enter Email" required/> 
+                       <input type="text" name="subject" placeholder="Enter subject" requred/>
+                       <textarea rows="8" name="message" placeholder="Enter message" required></textarea>
+                       <button type="submit" class="visit-button red-btn">send message</button>
+                  </form>
+               </div>
+           </div>
+     </section>
+    <section class="footer">
+        <div class="footer-body">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy and Policy</a> 
+        </div>
+        <a href="http://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="http://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+        <p>©2022 Photography World | All rights reserved.</p>
+    </section>
+    <!... javascript code to execute hidemenu and show menu functioms...>
+    <script type="text/javascript">
+        //javascript code...
+        var navlinks=document.getElementById("nav-links");
+        function hidemenu(){
+            navlinks.style.display="none"
+        }
+        function showmenu(){
+            navlinks.style.display="block"
+        }
+    </script>
+</body>
+</html>   
+

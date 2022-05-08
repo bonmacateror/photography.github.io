@@ -1,0 +1,66 @@
+<!DOCTYPE html>                                                                                                             
+<html>
+<head>
+     <title>webpge</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+     <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body class="bgcolor">
+      <section class="video-wrapper">
+         <!...<video playsinline autoplay muted loop poster="">
+             <source src="background_video.mp4" type="video/mp4">
+        </video>...>
+          
+       <div class="header">
+         <nav>
+             <img src="logo.png"/>
+             <div class="nav-links" id="nav-links">
+                 <a class="prevy" onclick="hidemenu()" >&#215; </a>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li> 
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="contact.html">Contct Us</a></li>
+                 </ul>
+              </div>
+             <i class="fa fa-bars" onclick="showmenu()"></i> 
+         </nav>
+         
+         </div>
+        <div class="text-box">
+            <h1> AbouT Us</h1> 
+         </div> 
+     </section>
+     <section class="about">
+          <h1>Staffs</h1>
+          <img src="bonma_img11.jpg"/>
+           
+     </section>
+    <section class="footer">
+        <div class="footer-body">
+            <a href="">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy and Policy</a> 
+        </div>
+        <a href="http://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="http://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+        <p>©Photography world | All rights reserved.</p>
+    </section>
+    <!... javascript code to execute hidemenu and show menu functioms...>
+    <script type="text/javascript">
+        //javascript code...
+        var navlinks=document.getElementById("nav-links");
+        function hidemenu(){
+            navlinks.style.display="none"
+        }
+        function showmenu(){
+            navlinks.style.display="block"
+        }
+    </script>
+</body>
+<html>

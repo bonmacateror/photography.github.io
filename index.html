@@ -1,0 +1,196 @@
+<!DOCTYPE html>                                                                                                            
+<html>
+<head>
+     <title>webpge</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+     <script src="jquery-3.2.1.min.js"></script>
+     <script src="jquery-ui.min.js"></script>
+</head>
+<body class='bgcolor'>
+     <section class="video-wrapper">
+         <!...<video playsinline autoplay muted loop poster="">
+             <source src="background_video.mp4" type="video/mp4">
+        </video>...>
+          
+       <div class="header">
+         <nav>
+             <img src="logo.png" oncontextmenu="return false"/>
+             <div class="nav-links" id="nav-links">
+                 <a class="prevy" onclick="hidemenu()" >&#215;</a> 
+                 <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li> 
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contct Us</a></li>
+                 </ul>
+              </div>
+             <i class="fa fa-bars" onclick="showmenu()"></i>
+         </nav>
+         
+         </div>
+         <div class="text-box">
+            <h1>Photography World, Bringing you Close to Reality</h1>
+         </div>
+         
+     </section>
+     <section class="welcome"> 
+         <h1>GALLARY</h1>
+         
+         <!---coding for smallerscreen gallery(mobilen devices)--->
+         <!-- Slideshow container -->
+         <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="blacky.jpg" style="width:100%">
+                <div class="text">Florida</div>
+            </div>
+
+           <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="victoria.jpg" style="width:100%">
+                <div class="text">Illinois</div>
+           </div>
+
+           <div class="mySlides fade">
+                 <div class="numbertext"></div>
+                 <img src="meditation.jpg" style="width:100%">
+                 <div class="text">Fransisca</div>
+           </div>
+    
+           <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="georgia.jpg" style="width:100%">
+                <div class="text">Goergia</div>
+           </div>
+           <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="scottland.jpg" style="width:100%">
+              <div class="text">Paris, France</div>
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="rome.jpg" style="width:100%">
+            <div class="text">Rome, italy</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="italy.jpg" style="width:100%">
+            <div class="text">Ibiza, France</div>
+         </div>
+    
+    
+         <!-- Next and previous buttons--> 
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+   
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+         </div>
+     </div>
+         <!---coding for largescreen gallary--->
+         <div class="gallary row"> 
+              <div class="gallary-left"> 
+                <img src="victoria.jpg" style="width:100%">
+              </div> 
+               <div class="gallary-right"> 
+                 <img src="bot.jpg" style="width:100%">
+               </div>
+              <!-- Next and previous buttons--> 
+             
+       </div>
+         <a href="contact.html" class="contact-button red-btn">Contact Us</a>
+     </section>
+    <section class="footer">
+        <div class="footer-body">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="">Terms of Service</a>
+            <a href="#">Privacy and Policy</a>
+        </div>
+        <a href="http://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="http://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+        <p>©2022 Photography World | All rights reserved.</p>
+    </section>
+    <!... javascript code to execute hidemenu and show menu functioms...>
+    <script type="text/javascript">
+        //javascript code...
+        var navlinks=document.getElementById("nav-links");
+        function hidemenu(){
+            navlinks.style.display="none"
+        }
+        function showmenu(){
+            navlinks.style.display="block"
+        }
+    </script>
+    <script>
+         $('#hello').hide('slide', {direction: 'left'}, 1000);
+        
+/*let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+ 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}*/
+   
+</script>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+</script>
+    
+</body>
+</html>   
+
